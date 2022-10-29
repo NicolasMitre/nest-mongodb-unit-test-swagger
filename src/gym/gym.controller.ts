@@ -37,6 +37,7 @@ export class GymController {
 
   @Delete(':id')
   remove(@Param('id') id: string) {
+    const hola;
     return this.gymService.remove(+id);
   }
 }
