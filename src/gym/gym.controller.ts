@@ -27,6 +27,7 @@ export class GymController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
+    const hola;
     return this.gymService.findOne(+id);
   }
 

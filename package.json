@@ -14,7 +14,7 @@
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
-    "lint:check": "eslint -c .eslintrc.js ./src/**/*.ts --max-warnings 0",
+    "lint:check": "eslint -c .eslintrc.js ./src/**/*.ts",
     "lint:fix": "eslint -c .eslintrc.js --fix ./src/**/*.ts",
     "lint:ci:check": "npm run lint:check -- --quiet",
     "lint": "npm run -s lint:ci:check",
