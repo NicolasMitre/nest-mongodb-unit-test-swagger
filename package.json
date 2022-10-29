@@ -15,8 +15,8 @@
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
     "lint-md": "remark -f .",
-    "lint:check": "eslint -c .eslintrc.js ./src/**/*.{js, ts} --max-warnings 0",
-    "lint:fix": "eslint -c .eslintrc.js --fix ./src/**/*.{js, ts, json}",
+    "lint:check": "eslint -c .eslintrc.js ./src/**/*.ts --max-warnings 0",
+    "lint:fix": "eslint -c .eslintrc.js --fix ./src/**/*.ts",
     "lint:ci:check": "npm run lint:check -- --quiet",
     "lint": "npm run -s lint:ci:check && npm run -s lint-md",
     "pre-commit": "lint-staged",
@@ -83,6 +83,6 @@
     "testEnvironment": "node"
   },
   "lint-staged": {
-    "./src/**/*.ts": "eslint --cache --fix"
+    "*": "npm run lint"
   }
 }

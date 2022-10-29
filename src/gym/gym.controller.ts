@@ -32,9 +32,6 @@ export class GymController {
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateGymDto: UpdateGymDto) {
-    const aaa = console.log('aaaa');
-    const aaa = console.log('aaaa');
-
     return this.gymService.update(+id, updateGymDto);
   }
 
