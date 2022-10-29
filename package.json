@@ -6,7 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "format-md": "remark . -o",
+    "format-md": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "npm run -s format-md && npm run lint:fix -- --quiet",
