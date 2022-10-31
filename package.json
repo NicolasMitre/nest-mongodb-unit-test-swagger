@@ -20,7 +20,7 @@
     "lint:ci:check": "npm run lint:check -- --quiet",
     "lint": "npm run -s lint:ci:check && npm run -s lint-md",
     "pre-commit": "lint-staged",
-    "prepare": "npx husky install",
+    "prepare": "husky install",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
